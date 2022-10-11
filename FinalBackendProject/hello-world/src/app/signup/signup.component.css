@@ -1,0 +1,64 @@
+label {
+
+    width: 100px;
+
+    display: inline-block;
+
+    margin: 0.2cm;
+
+    font: size 8px;
+
+    font-weight: bold
+
+}
+
+
+
+input {
+
+    width: 250px;
+
+    height: auto;
+
+}
+
+
+
+.container {
+
+    width: 400px;
+
+    height: auto;
+
+}
+
+
+
+
+body {
+
+
+
+    background-color: paleturquoise
+
+}
+
+
+
+/* .space {
+
+    width: 10px;
+
+    height: auto;
+
+    display: inline-block;
+
+} */
+
+
+
+.btn{
+
+    margin-left:55px;
+
+}

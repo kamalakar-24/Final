@@ -1,0 +1,32 @@
+<head>
+
+    <link rel="stylesheet" href="bookform.component.css" type="text/css">
+
+</head>
+
+<body class="container">
+    <div>
+        <form>
+            <label>Title </label>
+            <input type="text" [(ngModel)]='book.title' name="title" required> <br>
+            <label> Author</label>
+            <input type="text" [(ngModel)]="book.author" name="author" required> <br>
+            <label> Catagory </label>
+            <input type="text" [(ngModel)]="book.catagory" name="catagory" required> <br>
+            <label> Content </label>
+            <input type="text" [(ngModel)]="book.content" name="content" required> <br>
+            <label> Is_Blocked </label>
+            <input type="text" [(ngModel)]="book.isBlocked" name="isBlocked" required> <br>
+            <label> Price </label>
+            <input type="text" [(ngModel)]="book.price" name="price" required> <br>
+            <label> PublishedDate </label>
+            <input type="text" [(ngModel)]="book.publishedDate" name="publishedDate" required> <br>
+            <label> Publisher </label>
+            <input type="text" [(ngModel)]="book.publisher" name="publisher" required> <br>
+            <label> Active </label>
+            <input type="text" [(ngModel)]="book.active" name="active" required> <br>
+
+            <button class='btn btn-primary' type="button" (click)="save()">Save</button>
+        </form>
+    </div>
+</body>

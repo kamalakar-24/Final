@@ -1,0 +1,18 @@
+<head>
+
+    <link rel="stylesheet" href="search-bookby-mail-and-book-id.component.css" type="text/css">
+
+</head>
+
+<body class="container">
+    <div>
+        <form>
+            <label>Email</label>
+            <input type="text" [(ngModel)]="book.email" name="email" /> <br>
+            <label>BookId</label>
+            <input type="text" [(ngModel)]="book.bookId" name="bookId" /> <br>
+
+            <button class='btn btn-primary' type="button" (click)="save()">Submit</button>
+        </form>
+    </div>
+</body>

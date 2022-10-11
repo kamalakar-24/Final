@@ -1,0 +1,26 @@
+<head>
+
+    <link rel="stylesheet" href="signup.component.css" type="text/css">
+
+</head>
+
+<body class="container">
+    <div >
+        <form>
+            <label>Username</label>
+            <input type="text" [(ngModel)]="user.username" name="Username" /> <br>
+            <label>Email</label>
+            <input type="text" [(ngModel)]="user.email" name="Email" /> <br>
+            <label>Password</label>
+            <input type="password" [(ngModel)]="user.password" name="password" class="password" /><br>
+            <label for="role">Role:</label>
+            <select class="form-select" aria-label="Default select example" name="role"  [(ngModel)]="user.role" placeholder="Choose the Role">  
+                 <!-- <option value="#">Select Role</option>     -->
+                             <option value="ROLE_READER">ROLE_READER</option>
+                             <option value="ROLE_AUTHOR">ROLE_AUTHOR</option>
+             </select>
+            <button class='btn btn-secondary' type="button" (click)="signup()">Signup</button>
+
+        </form>
+    </div>
+</body>

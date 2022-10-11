@@ -1,0 +1,20 @@
+<head>
+
+    <link rel="stylesheet" href="searchbook.component.css" type="text/css">
+
+</head>
+
+<body class="container">
+    <div>
+        <form>
+            <label>Author </label>
+            <input type="text" [(ngModel)]="book.author" name="author" required> <br>
+            <label>Catagory </label>
+            <input type="text" [(ngModel)]="book.catagory" name="catagory" required> <br>
+            <label> Price </label>
+            <input type="text" [(ngModel)]="book.price" name="price" required> <br>
+
+            <button class='btn btn-primary' type="button" (click)="searchbook()">Submit</button>
+        </form>
+    </div>
+</body>

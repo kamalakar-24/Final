@@ -1,0 +1,28 @@
+<head>
+
+    <link rel="stylesheet" href="update-book.component.css" type="text/css">
+
+</head>
+
+<body class="container">
+    <div>
+        <form>
+            <label>BookId</label>
+            <input type="text" [(ngModel)]='book.bookId' name="bookId"> <br>
+            <label>Title</label>
+            <input type="text" [(ngModel)]='book.title' name="title"> <br>
+            <label>Catagory</label>
+            <input type="text" [(ngModel)]="book.catagory" name="catagory"> <br>
+            <label>Is_Blocked</label>
+            <input type="text" [(ngModel)]="book.isBlocked" name="isBlocked"> <br>
+            <label> Price</label>
+            <input type="text" [(ngModel)]="book.price" name="price"> <br>
+            <label>Publisher</label>
+            <input type="text" [(ngModel)]="book.publisher" name="publisher"> <br>
+            <label>Active </label>
+            <input type="text" [(ngModel)]="book.active" name="active"> <br>
+
+            <button class='btn btn-secondary' type="button" (click)="updateBook()">Save</button>
+        </form>
+    </div>
+</body>

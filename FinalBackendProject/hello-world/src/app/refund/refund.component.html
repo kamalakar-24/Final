@@ -1,0 +1,26 @@
+<head>
+
+    <link rel="stylesheet" href="refund.component.css" type="text/css">
+
+</head>
+
+<body class="container">
+    <div>
+        <form>
+
+            <label>bookId</label>
+            <input type="text" [(ngModel)]="book.bookId" name="bookId" class="bookId" /> <br>
+
+            <label>paymentId</label>
+            <input type="text" [(ngModel)]="book.paymentId" name="paymentId" class="paymentId" /> <br>
+
+            <label>email</label>
+            <input type="text" [(ngModel)]="book.email" name="email" class="email" /> <br>
+
+            <label>refundAmount</label>
+            <input type="text" [(ngModel)]="book.refundAmount" name="refundAmount" class="refundAmount" /> <br>
+
+            <button class='btn btn-primary' (click)="refund()">Submit</button>
+        </form>
+    </div>
+</body>

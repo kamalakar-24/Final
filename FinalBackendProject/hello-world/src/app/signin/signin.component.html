@@ -1,0 +1,18 @@
+<head>
+
+    <link rel="stylesheet" href="signin.component.css" type="text/css">
+
+</head>
+
+<body class="container">
+    <div>
+        <form>
+            <label> username </label>
+            <input type="text" [(ngModel)]="user.username" name="username" /> <br>
+            <label> password </label>
+            <input type="password" [(ngModel)]="user.password" name="password"/> <br>
+
+            <button class='btn btn-info' type="button" (click)="signin()"> Login</button>
+        </form>
+    </div>
+</body>
